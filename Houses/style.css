@@ -399,34 +399,32 @@ section.real {
 	position: relative;
 	margin-bottom: 10px;
 }
-.picture > img.slider.active {
+.picture > img.slide.active {
 	position: relative;
 }
-.picture img.slider {
+.picture img.slide {
 	width: 100%;
 	opacity: 0;
 	transition: .5s;
 	position: absolute;
 }
-.picture > img.active,
-.picture img.next,
-.picture img.next {
+.picture > img.active {
 	opacity: 1;
 }
 
-.picture > img.prev {
+.picture > img#prev {
 	position: absolute;
 	top: 45%;
 	left: 1px;
 }
-.picture > img.next {
+.picture > img#next {
 	position: absolute;
 	top: 45%;
 	right: 1px;
 }
 
-.picture > img.prev:hover,
-.picture > img.next:hover {
+.picture > img#prev:hover,
+.picture > img#next:hover {
 	background: #ffba00;
 	cursor: pointer;
 	border-radius: 10px;
@@ -439,9 +437,6 @@ section.real {
 .slider img {
 	margin-bottom: 10px;
 	cursor: pointer;
-}
-.slider a {
-
 }
 
 /*--------------------------------------WHAT-SAY SECTION_______________________*/

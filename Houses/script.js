@@ -1,16 +1,18 @@
 window.onload = function () {
 
-	var images = document.querySelectorAll('img.slider');
+	var images = document.querySelectorAll('img.slide');
 
 	console.log(images);
 
 	var i = 0;
 
-	document.querySelectorAll('img.prev').onclick = function () {
+	document.querySelector('img#prev').onclick = function () {
 		
 
-		images[i].className = 'slider';
-		i--;
+		images[i].className = 'slide';
+
+		console.log(i);
+	 	i--;
 
 		if (i < 0) {
 			i = images.length -1;
@@ -19,9 +21,9 @@ window.onload = function () {
 	}
 	
 
-	document.querySelectorAll('img.next').onclick = function () {
+	document.querySelector('img#next').onclick = function () {
 
-		images[i].className = 'slider';
+		images[i].className = 'slide';
 		i++;
 
 		if (i >= images.length) {
@@ -30,4 +32,4 @@ window.onload = function () {
 		images.className = 'active';
 	}
 
-}
+ }
