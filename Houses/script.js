@@ -17,7 +17,7 @@ window.onload = function () {
 		if (i < 0) {
 			i = images.length -1;
 		}
-		images.className = 'active';
+		images[i].className = 'active';
 	}
 	
 
@@ -29,7 +29,8 @@ window.onload = function () {
 		if (i >= images.length) {
 			i = 0;
 		}
-		images.className = 'active';
+		images[i].className = 'active';
+		
 	}
 
  }

@@ -398,6 +398,7 @@ section.real {
 	margin-top: 5px;
 	position: relative;
 	margin-bottom: 10px;
+	transition: transform 1s;
 }
 .picture > img.slide.active {
 	position: relative;
@@ -405,11 +406,11 @@ section.real {
 .picture img.slide {
 	width: 100%;
 	opacity: 0;
-	transition: .5s;
 	position: absolute;
 }
 .picture > img.active {
 	opacity: 1;
+	transition: 1s;
 }
 
 .picture > img#prev {
