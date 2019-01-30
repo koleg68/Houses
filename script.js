@@ -7,19 +7,19 @@ window.onload = function () {
 	var i = 0;
 
 	document.querySelector('img#prev').onclick = function () {
-		
+
 
 		images[i].className = 'slide';
 
 		console.log(i);
-	 	i--;
+		i--;
 
 		if (i < 0) {
-			i = images.length -1;
+			i = images.length - 1;
 		}
 		images[i].className = 'active';
 	}
-	
+
 
 	document.querySelector('img#next').onclick = function () {
 
@@ -30,7 +30,7 @@ window.onload = function () {
 			i = 0;
 		}
 		images[i].className = 'active';
-		
+
 	}
 
- }
+}
