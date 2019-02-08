@@ -71,7 +71,7 @@
 		height: 45px;
 
 	}
-	p.logo {
+	a.logo {
 		padding-top: 12px;
 	}
 
@@ -162,6 +162,16 @@
 		width: 25%;
 	
 }
+@media only screen and (max-width: 840px) {
+	.up {
+		flex-direction: column;
+		width: 70%;
+		margin: 0 auto;
+	}
+	.client {
+		max-width: 95%;
+	}
+}
 @media only screen and (max-width: 768px) {
 
 	.wrapper {
@@ -176,6 +186,4 @@
 	.footer-left {
 	width: 55%;
 	}
-	
 }
-	

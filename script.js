@@ -2,7 +2,7 @@ window.onload = function () {
 
 	var images = document.querySelectorAll('img.slide');
 
-	console.log(images);
+	// console.log(images);
 
 	var i = 0;
 
@@ -26,7 +26,7 @@ window.onload = function () {
 		images[i].className = 'slide';
 		i++;
 
-		if (i >= images.length) {
+		if (i > images.length) {
 			i = 0;
 		}
 		images[i].className = 'active';
@@ -43,3 +43,37 @@ jQuery(document).ready(function () {
 		return false;
 	});
 });
+
+// JavaScript 29. Плавная прокрутка страницы вверх
+window.onload = function () {
+	var scrolled;
+	var timer;
+
+	document.getElementById('btn_top').onclick = function () {
+		scrolled = window.pageYOffset;
+
+		scrollToTop();
+	};
+
+	function scrollToTop() {
+
+		if (scrolled > 0) {
+			window.scrollTo(0, scrolled);
+			scrolled = scrolled - 500; //100 скорость прокрутки
+			timer = setTimeout(scrollToTop, 100);
+		} else {
+			clearTimeout(timer);
+			window.scrollTo(0, 0);
+		}
+	}
+
+
+	window.onscroll = function () {
+		var top = document.getElementById('btn_top');
+		if (window.pageYOffset > 100) {
+			top.style.display = 'block';
+		} else {
+			top.style.display = 'none';
+		}
+	};
+};
