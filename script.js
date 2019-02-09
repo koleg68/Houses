@@ -44,7 +44,7 @@ jQuery(document).ready(function () {
 	});
 });
 
-// JavaScript 29. Плавная прокрутка страницы вверх
+//Плавная прокрутка страницы вверх
 window.onload = function () {
 	var scrolled;
 	var timer;
