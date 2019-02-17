@@ -614,7 +614,6 @@ div.stripe>div:nth-child(3) {
 
 section.last {
    min-height: 600px;
-   background: url(https://yandex.ru/map-widget/v1/-/CBefAKhQ9C) round;
 }
 
 section.last .bg {
@@ -656,7 +655,6 @@ section.last .wrapper {
 
 form {
    width: 370px;
-   height: 400px;
    background: #fff;
    margin-top: 48px;
    border: 1px solid black;
@@ -671,8 +669,8 @@ form {
    display: flex;
    flex-direction: column;
    align-content: flex-end;
-   width: 295px;
-   height: 197px;
+   width: 95%;
+   margin: 0 auto;
 }
 
 .inputs input,
@@ -800,5 +798,8 @@ footer p.phone {
 #btn_top img {
    width: 50px;
 }
-
+.map {
+   width: 100%;
+   margin: 48px 1% 0 0;
+}
 /*===============================MEDIA===========================*/

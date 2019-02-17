@@ -59,9 +59,7 @@
     
 }
 @media only screen and (max-width: 1024px) {
-	.wrapper {
-		width: 800px;
-	}
+	
 	.two-buttons {
 	margin-bottom: 0;
 	width: 350px;
@@ -173,10 +171,6 @@
 	}
 }
 @media only screen and (max-width: 768px) {
-
-	.wrapper {
-		width: 700px;
-	}
 	
 	div.up > img {
 	bottom: 10px;
