@@ -1,17 +1,11 @@
-window.onload = function () {
 
-	var images = document.querySelectorAll('img.slide');
-
-	// console.log(images);
-
+	var images = document.querySelectorAll('.picture img.slide');
 	var i = 0;
 
 	document.querySelector('img#prev').onclick = function () {
 
-
 		images[i].className = 'slide';
 
-		console.log(i);
 		i--;
 
 		if (i < 0) {
@@ -20,20 +14,18 @@ window.onload = function () {
 		images[i].className = 'active';
 	};
 
-
 	document.querySelector('img#next').onclick = function () {
 
 		images[i].className = 'slide';
 		i++;
 
-		if (i > images.length) {
+		if (i > images.length-1) {
 			i = 0;
 		}
 		images[i].className = 'active';
 
 	};
 
-};
 
 jQuery(document).ready(function () {
 	jQuery("a.scrollto").click(function () {

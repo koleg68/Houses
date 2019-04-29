@@ -15,6 +15,12 @@ li {
   text-decoration: none;
 }
 
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
 h2 {
   display: inline-block;
   margin-top: 95px;
@@ -26,14 +32,11 @@ h2 {
 .clearfix:after {
   content: "";
   display: block;
-}
-
-.clearfix:after {
   clear: both;
 }
 
-.clearfix {
-  *zoom: 1;
+button {
+  outline: none;
 }
 
 .wrapper {
@@ -560,6 +563,7 @@ section.real {
   opacity: 1;
   -webkit-transition: 1s;
   transition: 1s;
+  width: 100%;
 }
 
 .picture > img#prev {
@@ -609,15 +613,25 @@ section.what-say {
   height: 228px;
   background: #fff;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.client > img:first-child {
-  float: left;
+.client-wrope {
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .client h4 {
-  display: inline-block;
-  margin: 40px;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: .1em;
@@ -625,20 +639,33 @@ section.what-say {
 
 .client > img:nth-child(3) {
   position: absolute;
-  top: 33px;
-  left: 480px;
+  top: calc(50% - 8px);
+  left: -20px;
+  cursor: pointer;
+}
+
+.client > img:nth-child(4) {
+  position: absolute;
+  top: calc(50% - 8px);
+  right: -20px;
+  cursor: pointer;
 }
 
 .client p {
-  margin-left: 269px;
   letter-spacing: .1em;
-  padding-right: 20px;
 }
 
-.client > div > img:nth-child(2) {
-  position: absolute;
-  top: 50%;
-  left: -40px;
+.client-name {
+  width: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .client > div > img:nth-child(3) {
@@ -904,6 +931,4 @@ footer p.phone {
   width: 100%;
   margin: 48px 1% 0 0;
 }
-
-/*===============================MEDIA===========================*/
 /*# sourceMappingURL=style.css.map */
