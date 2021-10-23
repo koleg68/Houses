@@ -1,437 +1,455 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<title>HOUSES</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="media.css">
-	
-</head>
-<!-- 
-Доделать:
-1. не работает слайдер
-2. доделать адаптивку для смартфонов
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <title>Houses</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="flex">
+          <div class="logo">
+            <img src="img/logo.jpg" alt="" />
+          </div>
+          <div class="menu">
+            <ul>
+              <li class="menu"><a href="#">технология</a></li>
+              <li class="menu"><a href="#">преимущества</a></li>
+              <li class="menu"><a href="#">готовые проекты</a></li>
+              <li class="menu"><a href="#">отзывы</a></li>
+              <li class="menu"><a href="#">где посмотреть</a></li>
+            </ul>
+            <div class="mobile-menu">
+              <a class="menu-btn-mobile" href="#"><span></span></a>
+            </div>
+          </div>
+          <div class="phone">
+            
+            <p class="phone">+7 (925) 742-44-16</p>
+            <div class="call_back">
+              <img src="img/phone-call.png" alt="" />
+              <p class="call_back">мы на связи</p>
+            </div>
+          </div>
+        </div>
+        <h1>
+          Модульные дома<br />
+          в Москве
+        </h1>
+        <div class="two-buttons">
+          <div class="header-one"><a href="#">посмотреть проекты</a></div>
+          <div class="header-two"><a href="#">изучить технологию</a></div>
+        </div>
+      </header>
+      <section class="first">
+        <div class="first-all">
+          <div class="sec-left">
+            <div class="sec-first">
+              <h2>суть модульной технологии<br />строительства</h2>
+            </div>
+            <div class="sec-second"></div>
 
-4. разобраться как вставить карту
-5. возможно что-то еще... -->
+            <div class="sec-fourth">
+              <p>
+                Строительство домов по модульной технологии - это в первую
+                очередь возможность достраивать свой дом по мере необходимости.
+                Во-вторых, это скорость строительства, достигаемая за счёт
+                предварительной сборки частей дома у нас на производстве.
+                В-третьих, это гибкость, возможность выбрать ту технологию
+                строительства деревянных домов, которую вы хотите.
+              </p>
+            </div>
+            <div class="sec-fifth">
+              <div class="sip">
+                <h3><a href="#">sip-панели</a></h3>
+              </div>
+              <div class="karkas">
+                <h3><a href="#">каркас</a></h3>
+              </div>
+            </div>
+          </div>
+          <div class="sec-right">
+            <div class="sec-third">
+              <img class="elipse" src="img/elipse.png" alt="" />
+              <img class="house" src="img/house.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="second">
+        <div class="second-all">
+          <div class="second-left">
+            <div class="second-one">
+              <p class="second-left">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptas, doloribus nesciunt ut perspiciatis exercitationem
+                alias rerum illum labore velit aliquid necessitatibus veritatis
+                sequi molestiae cum quaerat cumque, inventore doloremque esse
+                obcaecati sapiente quidem fuga optio! Eos illo officia ut
+                dolores eaque asperiores praesentium recusandae repudiandae, at
+                ratione suscipit cum, aperiam.
+              </p>
+            </div>
+            <div class="group">
+              <div class="second-two">
+                <ul class="second-left">
+                  <li>Преимущество технологии</li>
+                  <li>Преимущество технологии</li>
+                  <li>Преимущество технологии</li>
+                  <li>Преимущество технологии</li>
+                  <li>Преимущество технологии</li>
+                </ul>
+              </div>
+              <div class="second-two1">
+                <ul class="second-right">
+                  <li>Преимущество технологии</li>
+                  <li>Преимущество технологии</li>
+                  <li>Преимущество технологии</li>
+                  <li>Преимущество технологии</li>
+                  <li>Преимущество технологии</li>
+                </ul>
+              </div>
+            </div>
+            <div class="view"><a href="#">посмотреть вживую</a></div>
+          </div>
+          <div class="second-right">
+            <img src="img/sup2.png" alt="" />
+          </div>
+        </div>
+      </section>
 
-<body>
-	<header>
-		<div class="wrapper">
-			<div class="flex">
-				<div class ="logo">
-					<p class="logo">domokey</p>
-				</div>
-				<div class="phone">
-					<p class="phone">+7 (925) 742-4-16</p>
-					<div class="call_back">
-						<img src="img/phone-call.png" alt="">
-						<p class="call_back">перезвоните мне</p>
-					</div>
-				</div>	
-				<div class="menu">
-					<ul>
-						<li class="menu"><a href="#">технология</a></li>
-						<li class="menu"><a href="#">преимущества</a></li>
-						<li class="menu"><a href="#">готовые проекты</a></li>
-						<li class="menu"><a href="#">отзывы</a></li>
-						<li class="menu"><a href="#">где посмотреть</a></li>
-					</ul>
-				</div>
-					
-			</div>
-			<h1>Модульные дома<br> в Москве</h1>
-			<div class="two-buttons">
-				<div class="header-one"><a href="#">посмотреть проекты</a></div>
-				<div class="header-two"><a href="#">изучить технологию</a></div>
-			</div>	
-			
-		</div>
-	</header>
-	<section class="first">
-		<div class="wrapper clearfix">
-			<div class="first-all">
-				<div class="sec-left">
+      <section class="third">
+        <div class="third-sec">
+          <div class="sec-first">
+            <h2>преимущества модульной<br />технологии</h2>
+          </div>
+          <div class="sec-second"></div>
+        </div>
+        <div class="advant">
+          <!-- левый столбец -->
 
-					<div class="sec-first">
-						<h2>суть модульной технологии<br>строительства</h2>
-					</div>
-					<div class="sec-second"></div>
-					
-					<div class="sec-fourth">
-						<p>Строительство домов по модульной технологии - это в первую очередьвозможность достраивать свой дом по мере необходимости. Во-вторых, это скорость строительства, достигаемая за счёт предварительной сборки частей дома у нас на производстве. В-третьих, это гибкость, возможность выбрать ту технологию строительства деревянных домов, которую вы хотите.</p>
-					</div>
-					<div class="sec-fifth">
-						<div class="sip"><h3><a href="#">sip-панели</a></h3></div>
-						<div class="karkas"><h3><a href="#">каркас</a></h3></div>
-					</div>
-				</div>
-				<div class="sec-right">
-					<div class="sec-third">
-						<img class="elipse" src="img/elipse.png" alt="">
-						<img class="house" src="img/house.png" alt="">
-					</div>
-					<div class="clearfix"></div>
-				</div>
-			</div>	
-		</div>
-	</section>
-	<section class="second">
-		<div class="wrapper">
+          <div class="advant-left">
+            <div class="diploma-group">
+              <div class="diploma">
+                <div class="border"></div>
+                <div class="down">
+                  <div class="diploma">
+                    <img src="img/diploma.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="diploma-text">
+                <h3>качество</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Saepe, optio mollitia ipsa voluptates consequuntur animi
+                </p>
+              </div>
+            </div>
+            <div class="diploma-group">
+              <div class="diploma">
+                <div class="border"></div>
+                <div class="down">
+                  <div class="diploma">
+                    <img src="img/limber.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="diploma-text">
+                <h3>гибкость</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Saepe, optio mollitia ipsa voluptates consequuntur animi
+                </p>
+              </div>
+            </div>
+          </div>
 
-			<div class="second-all">
+          <!-- центральный столбец -->
 
-				<div class="second-left">
-				
-					<div class="second-one">
-						<p class="second-left">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, doloribus nesciunt ut perspiciatis exercitationem alias rerum illum labore velit aliquid necessitatibus veritatis sequi molestiae cum quaerat cumque, inventore doloremque esse obcaecati sapiente quidem fuga optio! Eos illo officia ut dolores eaque asperiores praesentium recusandae repudiandae, at ratione suscipit cum, aperiam.
-						</p>
-					
-					</div>
-					<div class="group">
-						<div class="second-two">
-							<ul class="second-left">
-								<li>Преимущество технологии</li>
-								<li>Преимущество технологии</li>
-								<li>Преимущество технологии</li>
-								<li>Преимущество технологии</li>
-								<li>Преимущество технологии</li>	
-							</ul> 
-						</div>
-						<div class="second-two1">
-							<ul class="second-right">
-								<li>Преимущество технологии</li>
-								<li>Преимущество технологии</li>
-								<li>Преимущество технологии</li>
-								<li>Преимущество технологии</li>
-								<li>Преимущество технологии</li>	
-							</ul> 
-						</div>
-					</div>
-					<div class="view"><a href="#">посмотреть вживую</a></div>
+          <div class="advant-centre">
+            <div class="diploma-group">
+              <div class="diploma">
+                <div class="border"></div>
+                <div class="down">
+                  <div class="diploma">
+                    <img src="img/speed.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="diploma-text">
+                <h3>скорость</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Saepe, optio mollitia ipsa voluptates consequuntur animi
+                </p>
+              </div>
+            </div>
+            <div class="diploma-group">
+              <div class="diploma">
+                <div class="border"></div>
+                <div class="down">
+                  <div class="diploma">
+                    <img src="img/change.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="diploma-text">
+                <h3>изменяемость</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Saepe, optio mollitia ipsa voluptates consequuntur animi
+                </p>
+              </div>
+            </div>
+          </div>
 
-				</div>
-				<div class="second-right">
-					<img src="img/sup2.png" alt="">
-				</div>
+          <!-- правый столбец -->
 
-			</div>
+          <div class="advant-right">
+            <div class="diploma-group">
+              <div class="diploma">
+                <div class="border"></div>
+                <div class="down">
+                  <div class="diploma">
+                    <img src="img/reach.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="diploma-text">
+                <h3>доступность</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Saepe, optio mollitia ipsa voluptates consequuntur animi
+                </p>
+              </div>
+            </div>
+            <div class="diploma-group">
+              <div class="diploma">
+                <div class="border"></div>
+                <div class="down">
+                  <div class="diploma">
+                    <img src="img/design.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="diploma-text">
+                <h3>дизайн</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Saepe, optio mollitia ipsa voluptates consequuntur animi
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ready">
+        <div class="ready-sec">
+          <div class="sec-first">
+            <h2>готовые решения</h2>
+          </div>
+          <div class="sec-second"></div>
+        </div>
+        <div class="group-all">
+          <!-- левая колонка -->
 
-		</div>
+          <div class="card-group">
+            <div class="card-item">
+              <img src="img/ready.png" alt="" />
+              <div class="info">
+                <h3>мечта олигарха</h3>
+                <p>Этажей: 3<br />Площадь: 1589, 98 м<sup>2</sup></p>
+                <p>
+                  <b>1 589 980 руб</b> или <b>13 000 руб/м<sup>2</sup></b>
+                </p>
+                <div><a href="#">получить проект</a></div>
+              </div>
+            </div>
+            <div class="between"></div>
+            <div class="card-item">
+              <img src="img/ready.png" alt="" />
+              <div class="info">
+                <h3>мечта олигарха</h3>
+                <p>Этажей: 3<br />Площадь: 1589, 98 м<sup>2</sup></p>
+                <p>
+                  <b>1 589 980 руб</b> или <b>13 000 руб/м<sup>2</sup></b>
+                </p>
+                <div><a href="#">получить проект</a></div>
+              </div>
+            </div>
+          </div>
 
-	</section>
+          <!-- ЦЕНТРАЛЬНАЯ КОЛОНКА -->
 
+          <div class="card-group">
+            <div class="card-item">
+              <img src="img/ready.png" alt="" />
+              <div class="info">
+                <h3>мечта олигарха</h3>
+                <p>Этажей: 3<br />Площадь: 1589, 98 м<sup>2</sup></p>
+                <p>
+                  <b>1 589 980 руб</b> или <b>13 000 руб/м<sup>2</sup></b>
+                </p>
+                <div><a href="#">получить проект</a></div>
+              </div>
+            </div>
+            <div class="between"></div>
+            <div class="card-item">
+              <img src="img/ready.png" alt="" />
+              <div class="info">
+                <h3>мечта олигарха</h3>
+                <p>Этажей: 3<br />Площадь: 1589, 98 м<sup>2</sup></p>
+                <p>
+                  <b>1 589 980 руб</b> или <b>13 000 руб/м<sup>2</sup></b>
+                </p>
+                <div><a href="#">получить проект</a></div>
+              </div>
+            </div>
+          </div>
 
-	<section class="third">
-		<div class="wrapper">
+          <!-- ПРАВАЯ КОЛОНКА -->
 
-			<div class="third-sec">
+          <div class="card-group">
+            <div class="card-item">
+              <img src="img/ready.png" alt="" />
+              <div class="info">
+                <h3>мечта олигарха</h3>
+                <p>Этажей: 3<br />Площадь: 1589, 98 м<sup>2</sup></p>
+                <p>
+                  <b>1 589 980 руб</b> или <b>13 000 руб/м<sup>2</sup></b>
+                </p>
+                <div><a href="#">получить проект</a></div>
+              </div>
+            </div>
+            <div class="between"></div>
+            <div class="card-item">
+              <img src="img/ready.png" alt="" />
+              <div class="info">
+                <h3>мечта олигарха</h3>
+                <p>Этажей: 3<br />Площадь: 1589, 98 м<sup>2</sup></p>
+                <p>
+                  <b>1 589 980 руб</b> или <b>13 000 руб/м<sup>2</sup></b>
+                </p>
+                <div><a href="#">получить проект</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="real">
+        <div class="real-sec">
+          <div class="real">
+            <h2>реализованные проекты</h2>
+          </div>
+          <div class="sec-second"></div>
 
-				<div class="sec-first">
-					<h2>преимущества модульной<br>технологии</h2>
-				</div>
-				<div class="sec-second"></div>
-			</div>
-			<div class="advant">
+          <div class="picture">
+            <img class="slide active" src="img/slider/1.jpg" alt="" />
+            <img class="slide" src="img/slider/2.jpg" alt="" />
+            <img class="slide" src="img/slider/3.jpg" alt="" />
+            <img class="slide" src="img/slider/4.jpg" alt="" />
+            <img class="slide" src="img/slider/5.jpg" alt="" />
+            <img class="slide" src="img/slider/6.jpg" alt="" />
+            <img class="slide" src="img/slider/2.jpg" alt="" />
+            <img id="prev" src="img/arrow_left.png" alt="" />
+            <img id="next" src="img/arrow_right.png" alt="" />
+          </div>
+          <div class="slider">
+            <img src="img/slider/1_small.png" alt="" />
+            <img src="img/slider/2_small.png" alt="" />
+            <img src="img/slider/3_small.png" alt="" />
+            <img src="img/slider/4_small.png" alt="" />
+            <img src="img/slider/5_small.png" alt="" />
+            <img src="img/slider/6_small.png" alt="" />
+            <img src="img/slider/2_small.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="what-say">
+        <div class="what-say-sec">
+          <div class="what-say">
+            <h2>что говорят наши клиенты</h2>
+          </div>
+          <div class="sec-second"></div>
+          <div class="client">
+            <div class="client-box">
+              <img src="img/viktor.png" alt="" />
+              <h4>виктор петрович</h4>
+              <img class="vk" src="img/vk1.png" alt="" />
+            </div>
 
-					<!-- левый столбец -->
+            <img class="left" src="img/arrow_left1.png" alt="" />
+            <img class="right" src="img/arrow_right1.png" alt="" />
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Similique explicabo minima in obcaecati odit delectus
+                distinctio! Perferendis neque ea ipsa libero dolor vero harum
+                enim rem iure magnam, molestiae nisi nesciunt quis ad cum
+                voluptates, animi optio consequatur laboriosam sapiente eveniet
+                ut aperiam omnis? Ab voluptate, assumenda sunt accusantium
+                deserunt.
+              </p>
+            </div>
+          </div>
+          <div class="stripe">
+            <div class="active"></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </section>
+      <section class="last">
+        <div class="bg">
+          <div class="up">
+            <h2>где мы находимся</h2>
+            <p>г. Москва, ул. Строителей, д.22</p>
+            <img src="img/sign.png" alt="" />
+            
+          </div>
+          <div class="box-form">
+            <form action="" method="post">
+              <div class="form">
+                <h4>запишитесь на нашу экскурсию</h4>
+                <p>по нашей выставочной<br />площадке</p>
+                <div class="inputs">
+                  <input type="text" name="name" placeholder="Имя" />
+                  <input type="text" name="phone" placeholder="Телефон" />
+                  <!-- <input type="submit" name="button" value="записаться">  -->
+                  <button>записаться</button>
+                </div>
+                <p>ваши данные под защитой</p>
+                <img class="lock" src="img/lock.png" alt="" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-all">
+          <div class="footer-left">
+            <div class="logo">
+              <img src="img/logo.jpg" alt="" />
+            </div>
+            <p>2021 &copy; Все права защищены</p>
+          </div>
+          <!-- <div class="footer-phone">
+            <img src="img/phone-call.png" alt="" />
+            <span class="call_back">перезвоните мне</span>
+            <span class="phone">+7 (925) 742-44-16</span>
+          </div> -->
+        </div>
+        <div id="btn_top">
+          <img src="img/to_top.png" alt="" />
+        </div>
+      </footer>
+    </div>
 
-				<div class="advant-left">
-					<div class="diploma-group"> 
-						<div class="diploma">
-							<div class="border"></div>
-							<div class="down">
-								<div class="diploma"><img src="img/diploma.png" alt=""></div>
-							</div>	
-						</div>
-						<div class="diploma-text">
-							<h3>качество</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, optio mollitia ipsa voluptates consequuntur animi</p>
-						</div>
-					</div>
-					<div class="diploma-group">
-						<div class="diploma">
-							<div class="border"></div>
-							<div class="down">
-								<div class="diploma"><img src="img/limber.png" alt=""></div>
-							</div>	
-						</div>
-						<div class="diploma-text">
-							<h3>гибкость</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, optio mollitia ipsa voluptates consequuntur animi</p>
-						</div>
-					</div>
-				</div>
-
-					<!-- центральный столбец -->
-
-				<div class="advant-centre">
-					<div class="diploma-group">
-						<div class="diploma">
-							<div class="border"></div>
-							<div class="down">
-								<div class="diploma"><img src="img/speed.png" alt=""></div>
-							</div>	
-						</div>
-						<div class="diploma-text">
-							<h3>скорость</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, optio mollitia ipsa voluptates consequuntur animi</p>
-						</div>
-					</div>
-					<div class="diploma-group">
-						<div class="diploma">
-							<div class="border"></div>
-							<div class="down">
-								<div class="diploma"><img src="img/change.png" alt=""></div>
-							</div>	
-						</div>
-						<div class="diploma-text">
-							<h3>изменяемость</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, optio mollitia ipsa voluptates consequuntur animi</p>
-						</div>
-					</div>
-				</div>
-
-					<!-- правый столбец -->
-
-				<div class="advant-right">
-					<div class="diploma-group">
-						<div class="diploma">
-							<div class="border"></div>
-							<div class="down">
-								<div class="diploma"><img src="img/reach.png" alt=""></div>
-							</div>	
-						</div>
-						<div class="diploma-text">
-							<h3>доступность</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, optio mollitia ipsa voluptates consequuntur animi</p>
-						</div>
-					</div>
-					<div class="diploma-group">
-						<div class="diploma">
-							<div class="border"></div>
-							<div class="down">
-								<div class="diploma"><img src="img/design.png"  alt=""></div>
-							</div>	
-						</div>
-						<div class="diploma-text">
-							<h3>дизайн</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, optio mollitia ipsa voluptates consequuntur animi</p>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</section>
-	<section class="ready">
-		<div class="wrapper">
-			<div class="ready-sec">
-
-				<div class="sec-first">
-					<h2>готовые решения</h2>
-				</div>
-				<div class="sec-second"></div>
-			</div>
-			<div class="group-all">
-				
-			<!-- левая колонка -->
-
-				<div class="card-group">
-					<div class="card-item">
-						<img src="img/ready.png" alt="">
-						<div class="info">
-							<h3>мечта олигарха</h3>
-							<p>Этажей: 3<br>Площадь: 1589, 98 м<sup>2</sup></p>
-							<p><b>1 589 980 руб</b> или <b>13 000 руб/м<sup>2</sup></b></p>
-							<div><a href="#">получить проект</a></div>
-						</div>
-					</div>
-					<div class="between"></div>
-					<div class="card-item">
-						<img src="img/ready.png" alt="">
-						<div class="info">
-							<h3>мечта олигарха</h3>
-							<p>Этажей: 3<br>Площадь: 1589, 98 м<sup>2</sup></p>
-							<p><b>1 589 980 руб</b> или <b>13 000 руб/м<sup>2</sup></b></p>
-							<div><a href="#">получить проект</a></div>
-						</div>
-					</div>
-				</div>
-	         
-	         <!-- ЦЕНТРАЛЬНАЯ КОЛОНКА -->
-
-				<div class="card-group">
-					<div class="card-item">
-						<img src="img/ready.png" alt="">
-						<div class="info">
-							<h3>мечта олигарха</h3>
-							<p>Этажей: 3<br>Площадь: 1589, 98 м<sup>2</sup></p>
-							<p><b>1 589 980 руб</b> или <b>13 000 руб/м<sup>2</sup></b></p>
-							<div><a href="#">получить проект</a></div>
-						</div>
-					</div>
-					<div class="between"></div>
-					<div class="card-item">
-						<img src="img/ready.png" alt="">
-						<div class="info">
-							<h3>мечта олигарха</h3>
-							<p>Этажей: 3<br>Площадь: 1589, 98 м<sup>2</sup></p>
-							<p><b>1 589 980 руб</b> или <b>13 000 руб/м<sup>2</sup></b></p>
-							<div><a href="#">получить проект</a></div>
-						</div>
-					</div>
-				</div>
-
-				<!-- ПРАВАЯ КОЛОНКА -->
-
-				<div class="card-group">
-					<div class="card-item">
-						<img src="img/ready.png" alt="">
-						<div class="info">
-							<h3>мечта олигарха</h3>
-							<p>Этажей: 3<br>Площадь: 1589, 98 м<sup>2</sup></p>
-							<p><b>1 589 980 руб</b> или <b>13 000 руб/м<sup>2</sup></b></p>
-							<div><a href="#">получить проект</a></div>
-						</div>
-					</div>
-					<div class="between"></div>
-					<div class="card-item">
-						<img src="img/ready.png" alt="">
-						<div class="info">
-							<h3>мечта олигарха</h3>
-							<p>Этажей: 3<br>Площадь: 1589, 98 м<sup>2</sup></p>
-							<p><b>1 589 980 руб</b> или <b>13 000 руб/м<sup>2</sup></b></p>
-							<div><a href="#">получить проект</a></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-	</section>
-	<section class="real">
-		<div class="wrapper clearfix">
-			<div class="real-sec">
-
-				<div class="real">
-					<h2>реализованные проекты</h2>
-				</div>
-				<div class="sec-second"></div>
-				
-				<div class="picture">
-					<img class="slide active" src="img/slider/1.jpg" alt="">
-					<img class="slide" src="img/slider/2.jpg" alt="">
-					<img class="slide" src="img/slider/3.jpg" alt="">
-					<img class="slide" src="img/slider/4.jpg" alt="">
-					<img class="slide" src="img/slider/5.jpg" alt="">
-					<img class="slide" src="img/slider/6.jpg" alt="">
-					<img class="slide" src="img/slider/2.jpg" alt="">
-					<img id="prev" src="img/arrow_left.png" alt="">
-					<img id="next" src="img/arrow_right.png" alt="">					
-				</div>
-				<div class="slider">
-					<a href="#"><img src="img/slider/1_small.png" alt=""></a>
-					<img src="img/slider/2_small.png" alt="">
-					<img src="img/slider/3_small.png" alt="">
-					<img src="img/slider/4_small.png" alt="">
-					<img src="img/slider/5_small.png" alt="">
-					<img src="img/slider/6_small.png" alt="">
-					<img src="img/slider/2_small.png" alt="">
-				</div>
-
-
-			</div>
-		</div>
-	</section>
-	<section class="what-say">
-		<div class="wrapper clearfix">
-			<div class="what-say-sec">
-
-				<div class="what-say">
-					<h2>что говорят наши клиенты</h2>
-				</div>
-				<div class="sec-second"></div>
-				<div class="client">
-					<img src="img/viktor.png" alt="">
-					<h4>виктор петрович</h4>
-					<img src="img/vk1.png" alt="">
-					<div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique explicabo minima in obcaecati odit delectus distinctio! Perferendis neque ea ipsa libero dolor vero harum enim rem iure magnam, molestiae nisi nesciunt quis ad cum voluptates, animi optio consequatur laboriosam sapiente eveniet ut aperiam omnis? Ab voluptate, assumenda sunt accusantium deserunt.</p>
-						<img src="img/arrow_left1.png" alt="">
-						<img src="img/arrow_right1.png" alt="">
-					</div>
-					
-				</div>
-					<div class="stripe">
-						<div></div>
-						<div></div>
-						<div></div>
-					</div>
-			</div>
-		</div>
-	</section>
-	<section class="last">
-		<div class="bg">
-			<div class="wrapper">
-				<div class="up">
-					<h2>где мы находимся</h2>
-					<p>г. Москва, ул. Строителей, д.22</p>
-					<img src="img/sign.png" alt="">
-					<div class="clearfix"></div>
-				</div>
-				<div>
-					<form action="" method="post">
-						<div class="form">
-							<h4>запишитесь на нашу экскурсию</h4>
-							<p>по нашей выставочной<br>площадке</p>
-							<div class="inputs">
-								<input type="text" name="name" placeholder="Имя">
-								<input type="text" name="phone" placeholder="Телефон">
-								<!-- <input type="submit" name="button" value="записаться">  -->
-								<button>записаться</button>
-							</div>
-							<p>ваши данные под защитой</p>
-							<img src="img/lock.png" alt="">
-
-						</div>
-
-					</form>
-				</div>	
-			</div>
-		</div>
-		
-	</section>
-
-	<footer>
-		<div class="bg">
-			<div class="wrapper">
-				<div class="footer-all">
-					<div class="footer-left">
-						<div class ="logo">
-							<p class="logo">domokey</p>
-						</div>
-						<p>2016 &copy; Все права защищены</p>
-					</div>
-					<div class="phone">
-						<div class="call_back">
-							<img src="img/phone-call.png" alt="">
-							<p class="call_back">перезвоните мне</p>
-						</div>
-						<p class="phone">+7 (925) 742-4-16</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</footer>
-			
-		<script src="script.js"></script>
-
-
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
