@@ -24,7 +24,7 @@ document.querySelector("img#next").onclick = function () {
 
 
 document.querySelector(".menu-btn-mobile").onclick = function (e) {
-  e.preventDefault;
+  e.preventDefault();
   this.classList.toggle("menu-btn-mobile_active");
   toggleMenu();
 };
