@@ -616,7 +616,7 @@ section.real {
 /*--------------------------------------WHAT-SAY SECTION_______________________*/
 
 section.what-say {
-  background: #f3f0f4;
+  background: #b3aab2;
 }
 
 .what-say-sec {
@@ -729,13 +729,10 @@ div.stripe > div:nth-child(3) {
   margin-bottom: 80px;
 }
 
-section.last {
-  min-height: 600px;
-}
 
 section.last .bg {
   width: 100%;
-  height: 105px;
+  // height: 105px;
   background: #673f6b;
 }
 
@@ -772,13 +769,13 @@ section.last .wrapper {
   display: flex;
   justify-content: flex-end;
   padding-right: 10px;
+  background-color: #e3d1e1;
 }
 
 form {
   width: 370px;
   background: #fff;
-  margin-top: 48px;
-  border: 1px solid black;
+  margin: 10px 0;
 }
 
 .form {
