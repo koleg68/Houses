@@ -37,7 +37,7 @@ section:not(:last-of-type) {
 }
 
 header {
-  background: url("/img/bg1.webp") no-repeat;
+  background: url("img/bg1.webp") no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
   -webkit-box-align: center;
