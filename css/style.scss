@@ -6,7 +6,7 @@
 @font-face {
   font-family: "Roboto";
   src: url(/fonts/RobotoRegular/Roboto-Light.ttf),
-  url(/fonts/RobotoRegular/Roboto-Medium.ttf);
+    url(/fonts/RobotoRegular/Roboto-Medium.ttf);
 }
 
 body {
@@ -97,23 +97,23 @@ button {
   transition: 0.2s;
 }
 
-.menu-btn-mobile span::before{
+.menu-btn-mobile span::before {
   transform: translateY(-5px);
 }
 .menu-btn-mobile span::after {
   transform: translateY(5px);
 }
 
-.menu-btn-mobile_active span{
+.menu-btn-mobile_active span {
   height: 0;
 }
-.menu-btn-mobile_active span::before{
-transform: rotate(45deg);
+.menu-btn-mobile_active span::before {
+  transform: rotate(45deg);
 }
 
-.menu-btn-mobile_active span::after{
+.menu-btn-mobile_active span::after {
   transform: rotate(-45deg);
-  }
+}
 
 .logo {
   background: #fff;
@@ -727,7 +727,6 @@ section.what-say {
 div.stripe > div:nth-child(3) {
   margin-bottom: 80px;
 }
-
 
 section.last .bg {
   width: 100%;
