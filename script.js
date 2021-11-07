@@ -22,7 +22,6 @@ document.querySelector("img#next").onclick = function () {
   images[i].className = "active";
 };
 
-
 document.querySelector(".menu-btn-mobile").onclick = function (e) {
   e.preventDefault();
   this.classList.toggle("menu-btn-mobile_active");
