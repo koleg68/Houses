@@ -80,7 +80,7 @@ window.addEventListener("load", () => {
 
   window.onscroll = function () {
     let top = document.getElementById("btn_top");
-    if (window.pageYOffset > 400) {
+    if (window.scrollY > 400) {
       top.style.display = "block";
     } else {
       top.style.display = "none";

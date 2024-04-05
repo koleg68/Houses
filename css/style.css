@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url(/fonts/RobotoRegular/Roboto-Light.ttf), url(/fonts/RobotoRegular/Roboto-Medium.ttf);
+  src: url(/Houses/fonts/RobotoRegular/RobotoRegular.ttf), url(Houses/fonts/RobotoRegular/Roboto-Medium.ttf);
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -415,7 +415,7 @@ ul.second-right {
 }
 
 .group li {
-  list-style-image: url(/img/Check15.png);
+  list-style-image: url(/Houses/img/Check15.png);
   letter-spacing: 0.1em;
 }
 
@@ -672,7 +672,11 @@ section.what-say {
 }
 
 .client-box {
-  position: relative;
+  min-width: 220px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -5;
 }
 .client-box img {
   width: 100%;
@@ -688,27 +692,27 @@ section.what-say {
   height: 32px;
 }
 
-.stripe {
+.active {
+position: relative;
+  z-index: initial;
+}
+.markers {
   width: 229px;
   margin-top: 35px;
   display: flex;
   justify-content: space-between;
 }
-.stripe div {
+.markers div {
   width: 70px;
   height: 5px;
   background: #fff;
   transition: 0.3s;
 }
-.stripe div:first-child.active {
+div.marker.active {
   background: #ffba00;
-}
-.stripe div:hover {
-  background: #ffba00;
-  cursor: pointer;
 }
 
-div.stripe > div:nth-child(3) {
+div.markers > div:nth-child(3) {
   margin-bottom: 80px;
 }
 
