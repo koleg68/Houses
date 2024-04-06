@@ -66,15 +66,12 @@ rightButton.addEventListener("click", () => {
 });
 
 function updateActiveMarker() {
-  // Сначала сбрасываем активные классы у всех маркеров
   markers.forEach(marker => {
       marker.classList.remove('active');
   });
 
-  // Получаем текущий активный слайд
   const activeSlide = document.querySelector('.client-box.active');
 
-  // Получаем индекс активного слайда
   const activeIndex = Array.from(activeSlide.parentNode.children).indexOf(activeSlide);
 
   // Устанавливаем активный класс для соответствующего маркера

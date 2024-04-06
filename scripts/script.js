@@ -87,3 +87,24 @@ window.addEventListener("load", () => {
     }
   };
 });
+
+
+function selectPicFromSlider(){
+  const bigPicture = document.querySelector('.picture');
+  const smallPicture = document.querySelector('.slider');
+  let index = 0;
+
+  smallPicture.addEventListener('click', (event)=>{
+    if(event.target.tagName == "IMG"){
+      index = Array.from(smallPicture.children).indexOf(event.target)
+    }
+    for(let i of bigPicture.children){
+      if (Array.from(bigPicture.children).indexOf(i) == index){
+        i.classList.add('active')
+      }else{
+        i.classList.remove('active')
+      }
+    }
+  })
+}
+selectPicFromSlider()
