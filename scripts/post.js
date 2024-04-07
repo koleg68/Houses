@@ -37,18 +37,18 @@ const descriptions = [
   "номер 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel tenetur culpa doloremque illum suscipit, laborum quaerat animi, dolorem molestiae maiores, blanditiis magni aperiam similique. Natus nobis soluta, ducimus voluptate amet aspernatur facilis obcaecati molestias illum magnam earum iure, voluptates illo ut ipsam aut ratione quae! Ea quis nam porro odit!",
 ];
 
-let currentIndex = 0;
+let currIndex = 0;
 
 function updateSlider() {
   clientBoxes.forEach((box) => box.classList.remove("active"));
-  clientBoxes[currentIndex].classList.add("active");
-  description.textContent = descriptions[currentIndex];
+  clientBoxes[currIndex].classList.add("active");
+  description.textContent = descriptions[currIndex];
 }
 
 leftButton.addEventListener("click", () => {
-  currentIndex--;
-  if (currentIndex < 0) {
-    currentIndex = clientBoxes.length - 1;
+  currIndex--;
+  if (currIndex < 0) {
+    currIndex = clientBoxes.length - 1;
   }
   updateSlider();
   // moveSliderToLeft();
@@ -56,9 +56,9 @@ leftButton.addEventListener("click", () => {
 });
 
 rightButton.addEventListener("click", () => {
-  currentIndex++;
-  if (currentIndex >= clientBoxes.length) {
-    currentIndex = 0;
+  currIndex++;
+  if (currIndex >= clientBoxes.length) {
+    currIndex = 0;
   }
   updateSlider();
   // moveSliderToRight();
@@ -66,34 +66,15 @@ rightButton.addEventListener("click", () => {
 });
 
 function updateActiveMarker() {
-  markers.forEach(marker => {
-      marker.classList.remove('active');
+  markers.forEach((marker) => {
+    marker.classList.remove("active");
   });
 
-  const activeSlide = document.querySelector('.client-box.active');
+  const activeSlide = document.querySelector(".client-box.active");
 
-  const activeIndex = Array.from(activeSlide.parentNode.children).indexOf(activeSlide);
+  const activeIndex = Array.from(activeSlide.parentNode.children).indexOf(
+    activeSlide
+  );
 
-  // Устанавливаем активный класс для соответствующего маркера
-  markers[activeIndex].classList.add('active');
+  markers[activeIndex].classList.add("active");
 }
-
-// function moveSliderToLeft() {
-//   const activeSlide = document.querySelector('.client-box.active');
-//   const prevSlide = activeSlide.previousElementSibling;
-
-//   if (prevSlide) {
-//       activeSlide.classList.remove('active');
-//       prevSlide.classList.add('active');
-//   }
-// }
-
-// function moveSliderToRight() {
-//   const activeSlide = document.querySelector('.client-box.active');
-//   const nextSlide = activeSlide.nextElementSibling;
-
-//   if (nextSlide) {
-//       activeSlide.classList.remove('active');
-//       nextSlide.classList.add('active');
-//   }
-// }

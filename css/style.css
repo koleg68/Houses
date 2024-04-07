@@ -549,15 +549,15 @@ section.real {
 }
 
 .picture {
-  margin-top: 5px;
+  /* margin-top: 5px; */
   position: relative;
   margin-bottom: 10px;
   transition: transform 1s;
 }
 
-.picture > img.slide.active {
+/* .picture > img.slide.active {
   position: relative;
-}
+} */
 
 .picture img.slide {
   width: 100%;
@@ -567,7 +567,8 @@ section.real {
   left: 0;
 }
 
-.picture > img.active {
+.picture > img.slide.active {
+  position: relative;
   opacity: 1;
   transition: 1s;
   width: 100%;

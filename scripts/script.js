@@ -1,26 +1,53 @@
-let images = document.querySelectorAll(".picture img.slide");
-let i = 0;
+const slides = document.querySelectorAll(".slide");
+const thumbnails = document.querySelectorAll(".slider img");
+let currentIndex = 0;
 
-document.querySelector("img#prev").onclick = function () {
-  images[i].className = "slide";
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    if (i === index) {
+      slide.classList.add("active");
+    } else {
+      slide.classList.remove("active");
+    }
+  });
+}
 
-  i--;
+function showThumbnail(index) {
+  thumbnails.forEach((thumbnail, i) => {
+    if (i === index) {
+      thumbnail.classList.add("active");
+    } else {
+      thumbnail.classList.remove("active");
+    }
+  });
+}
 
-  if (i < 0) {
-    i = images.length - 1;
-  }
-  images[i].className = "active";
-};
+function prevSlide() {
+  currentIndex = currentIndex === 0 ? slides.length - 1 : currentIndex - 1;
+  showSlide(currentIndex);
+  showThumbnail(currentIndex);
+}
 
-document.querySelector("img#next").onclick = function () {
-  images[i].className = "slide";
-  i++;
+function nextSlide() {
+  currentIndex = currentIndex === slides.length - 1 ? 0 : currentIndex + 1;
+  showSlide(currentIndex);
+  showThumbnail(currentIndex);
+}
 
-  if (i > images.length - 1) {
-    i = 0;
-  }
-  images[i].className = "active";
-};
+document.getElementById("prev").addEventListener("click", prevSlide);
+document.getElementById("next").addEventListener("click", nextSlide);
+
+thumbnails.forEach((thumbnail, index) => {
+  thumbnail.addEventListener("click", () => {
+    currentIndex = index;
+    showSlide(currentIndex);
+    showThumbnail(currentIndex);
+  });
+});
+
+showSlide(currentIndex);
+showThumbnail(currentIndex);
+
 
 document.querySelector(".menu-btn-mobile").onclick = function (e) {
   e.preventDefault();
@@ -88,23 +115,62 @@ window.addEventListener("load", () => {
   };
 });
 
+// function selectPicFromSlider() {
+//   const bigPicture = document.querySelector(".picture");
+//   const smallPicture = document.querySelector(".slider");
+//   let index = 0;
 
-function selectPicFromSlider(){
-  const bigPicture = document.querySelector('.picture');
-  const smallPicture = document.querySelector('.slider');
-  let index = 0;
+//   smallPicture.addEventListener("click", (event) => {
+//     if (event.target.tagName == "IMG") {
+//       index = Array.from(smallPicture.children).indexOf(event.target);
+//     }
+//     for (let i of bigPicture.children) {
+//       if (Array.from(bigPicture.children).indexOf(i) === index) {
+//         i.classList.add("active");
+//       } else {
+//         i.classList.remove("active");
+//       }
+//     }
+//   });
+// }
+// selectPicFromSlider();
 
-  smallPicture.addEventListener('click', (event)=>{
-    if(event.target.tagName == "IMG"){
-      index = Array.from(smallPicture.children).indexOf(event.target)
-    }
-    for(let i of bigPicture.children){
-      if (Array.from(bigPicture.children).indexOf(i) == index){
-        i.classList.add('active')
-      }else{
-        i.classList.remove('active')
-      }
-    }
-  })
-}
-selectPicFromSlider()
+// #===================== Отправка формы на сервер ===============#
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector(".form");
+  const button = form.querySelector("button");
+
+  button.addEventListener("click", function (event) {
+    event.preventDefault(); // Предотвращаем отправку формы по умолчанию
+
+    // Получаем данные из полей формы
+    const name = form.querySelector('input[name="name"]').value;
+    const phone = form.querySelector('input[name="phone"]').value;
+
+    // Создаем объект FormData и добавляем в него данные формы
+    const formData = new FormData();
+    formData.append("name", name);
+    formData.append("phone", phone);
+
+    // Отправляем данные на сервер с помощью Fetch API
+    fetch("https://toniko.ru", {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.text();
+      })
+      .then((data) => {
+        console.log("Form data sent successfully:", data);
+        // Дополнительные действия после успешной отправки формы
+      })
+      .catch((error) => {
+        console.error("Error sending form data:", error);
+        // Обработка ошибок при отправке формы
+      });
+  });
+});

@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "script.js",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.19.2"
+  },
   "devDependencies": {
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.0",
     "gulp-csso": "^4.0.1",
     "gulp-file-include": "^2.3.0",
     "gulp-htmlmin": "^5.0.1",
