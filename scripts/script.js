@@ -115,44 +115,9 @@ window.addEventListener("load", () => {
   };
 });
 
+let phoneMask = IMask(
+  document.getElementById('phone'), {
+      mask: '+7(000) 000-0000'
+  }
+);
 
-// // #===================== Отправка формы на сервер ===============#
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   const form = document.querySelector(".form");
-//   const button = form.querySelector("button");
-//   const serverIPAddress = '77.222.57.209';
-
-//   button.addEventListener("click", function (event) {
-//     event.preventDefault(); // Предотвращаем отправку формы по умолчанию
-
-//     // Получаем данные из полей формы
-//     const name = form.querySelector('input[name="name"]').value;
-//     const phone = form.querySelector('input[name="phone"]').value;
-
-//     // Создаем объект FormData и добавляем в него данные формы
-//     const formData = new FormData();
-//     formData.append("name", name);
-//     formData.append("phone", phone);
-
-//     // Отправляем данные на сервер с помощью Fetch API
-//     fetch(serverIPAddress, {
-//       method: "POST",
-//       body: formData,
-//     })
-//       .then((response) => {
-//         if (!response.ok) {
-//           throw new Error("Network response was not ok");
-//         }
-//         return response.text();
-//       })
-//       .then((data) => {
-//         console.log("Form data sent successfully:", data);
-//         // Дополнительные действия после успешной отправки формы
-//       })
-//       .catch((error) => {
-//         console.error("Error sending form data:", error);
-//         // Обработка ошибок при отправке формы
-//       });
-//   });
-// });
