@@ -115,31 +115,13 @@ window.addEventListener("load", () => {
   };
 });
 
-// function selectPicFromSlider() {
-//   const bigPicture = document.querySelector(".picture");
-//   const smallPicture = document.querySelector(".slider");
-//   let index = 0;
-
-//   smallPicture.addEventListener("click", (event) => {
-//     if (event.target.tagName == "IMG") {
-//       index = Array.from(smallPicture.children).indexOf(event.target);
-//     }
-//     for (let i of bigPicture.children) {
-//       if (Array.from(bigPicture.children).indexOf(i) === index) {
-//         i.classList.add("active");
-//       } else {
-//         i.classList.remove("active");
-//       }
-//     }
-//   });
-// }
-// selectPicFromSlider();
 
 // #===================== Отправка формы на сервер ===============#
 
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector(".form");
   const button = form.querySelector("button");
+  const serverIPAddress = '77.222.57.209';
 
   button.addEventListener("click", function (event) {
     event.preventDefault(); // Предотвращаем отправку формы по умолчанию
@@ -154,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
     formData.append("phone", phone);
 
     // Отправляем данные на сервер с помощью Fetch API
-    fetch("https://toniko.ru", {
+    fetch(serverIPAddress, {
       method: "POST",
       body: formData,
     })

@@ -51,7 +51,6 @@ leftButton.addEventListener("click", () => {
     currIndex = clientBoxes.length - 1;
   }
   updateSlider();
-  // moveSliderToLeft();
   updateActiveMarker();
 });
 
@@ -61,7 +60,6 @@ rightButton.addEventListener("click", () => {
     currIndex = 0;
   }
   updateSlider();
-  // moveSliderToRight();
   updateActiveMarker();
 });
 

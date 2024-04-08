@@ -555,10 +555,6 @@ section.real {
   transition: transform 1s;
 }
 
-/* .picture > img.slide.active {
-  position: relative;
-} */
-
 .picture img.slide {
   width: 100%;
   opacity: 0;
