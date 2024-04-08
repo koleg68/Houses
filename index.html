@@ -409,13 +409,14 @@
             <img src="img/sign.png" alt="" />
           </div>
           <div class="box-form">
-            <form action="" method="post">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="50932494-6f7c-48dc-a29e-bac0432c8f6d">
               <div class="form">
                 <h4>запишитесь на нашу экскурсию</h4>
                 <p>по нашей выставочной<br />площадке</p>
                 <div class="inputs">
-                  <input type="text" id="name" name="name" placeholder="Имя" required/>
-                  <input type="text" id="phone" name="phone" placeholder="Телефон" required/>
+                  <input type="text" id="name" name="name" placeholder="Имя" required autocomplete="off"/>
+                  <input type="text" id="phone" name="phone" placeholder="Телефон" required autocomplete="off"/>
                   <button type="submit">записаться</button>
                 </div>
                 <p>ваши данные под защитой</p>
