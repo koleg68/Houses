@@ -115,9 +115,16 @@ window.addEventListener("load", () => {
   };
 });
 
+
+// ================== FORM ======================
+
 let phoneMask = IMask(
   document.getElementById('phone'), {
       mask: '+7(000) 000-0000'
   }
 );
 
+
+window.onload = function() {
+  document.querySelector("form").reset();
+};
